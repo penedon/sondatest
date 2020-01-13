@@ -4,6 +4,7 @@
 
 ### Links Úteis
 
+* [Servidor](https://sondatest.herokuapp.com/)
 * [Cliente (Editor)](https://stackblitz.com/edit/sondatest)
 
 ### 1. Introdução
@@ -25,7 +26,9 @@ Por questão de segurança, foi pensado em autentificação por token em uma apl
 
 Também e preciso implementar melhor a validação dos campos da classe Aeronave.
 
-A API está hospedada no serviço **Heroku** para que, de forma simplifica, fosse possível monitorar a atividade da aplicação bem como monitorar e reagir a falhas.
+A API está hospedada no serviço **Heroku** para que, de forma simplificada, fosse possível monitorar a atividade da aplicação bem como monitorar e reagir a falhas.
+
+Ficou devendo somente as rotas de informações importantes, como quantidade de aeronaves por marca ou ano bem como o filtro da útlima semana.
 
 #### 2.3 Cliente
 
