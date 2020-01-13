@@ -1,0 +1,32 @@
+p {
+  font-family: Lato;
+}
+
+.row-header {
+  background-color: #21488a;
+  color: white;
+}
+
+.row-header *{
+  /* border: 1px solid #ccc; */
+  text-align: center;
+  font-weight: bold;
+  border-right: 1px solid #3a6abc;
+}
+
+.row-body *{
+  text-align: center;
+  border-right: 1px solid #ddd
+}
+
+select {
+  width: 100%;
+}
+
+input[type=text] {
+  width: 100%
+}
+
+.save {
+  width: 100%
+}

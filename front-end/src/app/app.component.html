@@ -1,0 +1,119 @@
+<h1>Gestão de Aeronaves</h1>
+
+<form [formGroup]="novaAeronave" (ngSubmit)="createAeronave(novaAeronave.value)">
+  <div class="row mt-4">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <select formControlName="marca" required>
+        <option value="" disabled>Marca</option>
+        <option value="Embraer">Embraer</option>
+        <option value="Boeing">Boeing</option>
+        <option value="Airbus">Airbus</option>
+      </select>
+    </div>
+    <div class="col-3"></div>
+
+    <div class="col-3"></div>
+    <div class="col-6">
+      <input type="text" placeholder="Modelo" formControlName="nome" required/>
+    </div>
+    <div class="col-3"></div>
+
+    <div class="col-3"></div>
+    <div class="col-3 pr-0">
+      <input type="text" placeholder="Ano" formControlName="ano" required/>
+    </div>
+    <div class="col-3 pl-0">
+      <select formControlName="vendido" required>
+        <option value="" disabled>Vendido</option>
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+      </select>
+    </div>
+    <div class="col-3"></div>
+
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 pt-3 pb-3">
+      <button type="submit" class="save"> Gravar </button>
+    </div>
+    <div class="col-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <b>Década de 90:</b> 2 aeronaves
+      <br>
+      <b>Década de 00:</b> 2 aeronaves
+    </div>
+    <div class="col-6">
+      <b>Essa semana:</b> 3 aeronaves
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row mb-3">
+    <div class="col-5 pr-0">
+      <input type="text" placeholder="Buscar por Modelo ou ID" />
+    </div>
+    <div class="col-2 pl-0">
+      <button class="save"> Buscar </button>
+    </div>
+    <div class="col-5"></div>
+  </div>
+  
+
+  <div class="row row-header">
+    <div class="col-2">ID</div>
+    <div class="col-2">Marca</div>
+    <div class="col-2">Modelo</div>
+    <div class="col-2">Ano</div>
+    <div class="col-2">Vendido</div>
+    <div class="col-2">Excluir</div>
+  </div>
+
+  <div class="row row-body">
+    <div class="col-2">1</div>
+    <div class="col-2">Embraer</div>
+    <div class="col-2">E2-190</div>
+    <div class="col-2">2014</div>
+    <div class="col-2">
+      <input type="checkbox" />
+    </div>
+    <div class="col-2">
+      <button>
+        x
+      </button>
+    </div>
+  </div>
+
+  <br>
+  <h5> Marcas </h5>
+  <div class="row">
+    <div class="col">
+      <b> Embraer: </b> 2
+    </div>
+  </div>
+
+</form>
+
+<!-- {{aeronaves | json}}
+
+<div *ngFor="let aeronave of aeronaves | async">
+
+  {{ aeronave | json }}
+
+</div> -->
+
+
+<!-- <hr>
+
+<button (click)="getPosts()">Get Posts</button>
+
+
+
+<button (click)="createPost()">Create Post</button>
+<hr>
+
+{{ newPost | async | json }} -->
